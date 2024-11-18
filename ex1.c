@@ -103,10 +103,7 @@ int main() {
     printf("Sum in hexadecimal: %X\n", sum);
 
     // print the bits at 3, 5, 7, 11
-    printf("Bit at position 3: %d\n", (sum >> 3) & 1);
-    printf("Bit at position 5: %d\n", (sum >> 5) & 1);
-    printf("Bit at position 7: %d\n", (sum >> 7) & 1);
-    printf("Bit at position 11: %d\n", (sum >> 11) & 1);
+    printf("Bit at position 3,5,7,11 are: %d%d%d%d\n", (sum >> 3) & 1, (sum >> 5) & 1, (sum >> 7) & 1, (sum >> 11) & 1);
 
     printf("Bye!\n");
 
