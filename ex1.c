@@ -16,16 +16,16 @@ int main() {
     Print the bit in this position. */
     // get the number and position
     int x, i;
-    printf("Enter a number:\n");
+    printf("Please enter a number:\n");
     scanf("%d", &x);
-    printf("Enter a position:\n");
+    printf("Please enter a position:\n");
     scanf("%d", &i);
 
     // extract the bit
     int bit = (x >> i) & 1;
 
     // print the result
-    printf("The bit at position %d is: %d\n", i, bit);
+    printf("The bit in position %d of number %d is:\n", i, bit);
 
     // Set bit
     //*******2
@@ -36,9 +36,9 @@ int main() {
     Now make sure it's "off" (equal to 0)
     Print the output */
     // get the number and position
-    printf("Enter a number:\n");
+    printf("Please enter a number:\n");
     scanf("%d", &x);
-    printf("Enter a position:\n");
+    printf("Please enter a position:\n");
     scanf("%d", &i);
 
     // turn the bit on
@@ -48,8 +48,8 @@ int main() {
     int num_with_bit_off = x & ~(1 << i);
 
     // print the results
-    printf("Number with bit %d ON: %d\n", i, num_with_bit_on);
-    printf("Number with bit %d OFF: %d\n", i, num_with_bit_off);
+    printf("Number with bit %d set to 1: %d\n", i, num_with_bit_on);
+    printf("Number with bit %d set to 0: %d\n", i, num_with_bit_off);
 
     // Toggle bit
     //********3
@@ -58,15 +58,15 @@ int main() {
     Toggle the bit in this position
     Print the new number */
     // get the number and position
-    printf("Enter a number:\n");
+    printf("Please enter a number:\n");
     scanf("%d", &x);
-    printf("Enter a position:\n");
+    printf("Please enter a position:\n");
     scanf("%d", &i);
 
     // toggle the bit
     num_with_bit_on = x ^ (1 << i);
     // print the result
-    printf("Number with bit %d ON: %d\n", i, num_with_bit_on);
+    printf("Number with bit %d toggled: %d\n", i, num_with_bit_on);
 //
     // Even - Odd
     //*******4
@@ -74,7 +74,7 @@ int main() {
     /* Scan an integer
     If the number is even - print 1, else - print 0. */
     // get a number:
-    printf("Enter a number: \n");
+    printf("Please enter a number: \n");
     scanf("%d", &x);
     // a variable for boolean even / odd
     int even_or_odd = !(x & 1);
@@ -91,19 +91,19 @@ int main() {
 
     int x1,x2, sum;
     // Get the two octal numbers from the user
-    printf("Enter the first number in octal: \n");
+    printf("Please enter the first number (octal): \n");
     scanf("%o", &x1);  // %o for octal input
-    printf("Enter the second number in octal: \n");
+    printf("Please enter the second number (octal): \n");
     scanf("%o", &x2);  // %o for octal input
 
     // culculate the sum
     sum = x1 + x2;
 
     // print the sum
-    printf("Sum in hexadecimal: %X\n", sum);
+    printf("The sum in hexadecimal: %X\n", sum);
 
     // print the bits at 3, 5, 7, 11
-    printf("Bit at position 3,5,7,11 are: %d%d%d%d\n", (sum >> 3) & 1, (sum >> 5) & 1, (sum >> 7) & 1, (sum >> 11) & 1);
+    printf("The 3,5,7,11 bits are: %d%d%d%d\n", (sum >> 3) & 1, (sum >> 5) & 1, (sum >> 7) & 1, (sum >> 11) & 1);
 
     printf("Bye!\n");
 
