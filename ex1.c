@@ -67,7 +67,7 @@ int main() {
     num_with_bit_on = x ^ (1 << i);
     // print the result
     printf("Number with bit %d ON: %d\n", i, num_with_bit_on);
-
+//
     // Even - Odd
     //*******4
     printf("\nEven - Odd:\n");
