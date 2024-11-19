@@ -25,7 +25,7 @@ int main() {
     int bit = (x >> i) & 1;
 
     // print the result
-    printf("The bit in position %d of number %d is:\n", i, bit);
+    printf("The bit in position %d of number %d is: %d\n", i, x, bit);
 
     // Set bit
     //*******2
